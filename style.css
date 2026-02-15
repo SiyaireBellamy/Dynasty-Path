@@ -1,40 +1,33 @@
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: black;
-    color: white;
-    text-align: center;
+.timeline {
+  margin-top: 40px;
+  border-left: 3px solid #ff3c00;
+  padding-left: 30px;
 }
 
-nav {
-    background: #111;
-    padding: 10px;
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
 }
 
-nav a {
-    color: orange;
-    margin: 10px;
-    text-decoration: none;
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: #ff3c00;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #ff3c00;
 }
 
-button {
-    padding: 10px 20px;
-    background: orange;
-    border: none;
-    cursor: pointer;
+.timeline-item h3 {
+  color: #ff7a00;
+  margin-bottom: 10px;
 }
 
-.flame-text {
-    font-size: 3em;
-    animation: flame 1.5s infinite alternate;
+.timeline-item p {
+  color: #ccc;
+  line-height: 1.6;
 }
 
-@keyframes flame {
-    from { color: orange; text-shadow: 0 0 10px red; }
-    to { color: red; text-shadow: 0 0 20px orange; }
-}
-
-.hidden {
-    display: none;
-}
