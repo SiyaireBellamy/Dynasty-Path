@@ -31,3 +31,25 @@
   line-height: 1.6;
 }
 
+.fleet {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.north { border-top: 3px solid red; }
+.west { border-top: 3px solid green; }
+.south { border-top: 3px solid purple; }
+.east { border-top: 3px solid gold; }
+
+.fleet h2 {
+  margin-bottom: 20px;
+}
+
+.fleet ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fleet li {
+  margin: 10px 0;
+}
