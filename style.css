@@ -1,0 +1,40 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    background: #111;
+    padding: 10px;
+}
+
+nav a {
+    color: orange;
+    margin: 10px;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+}
+
+.flame-text {
+    font-size: 3em;
+    animation: flame 1.5s infinite alternate;
+}
+
+@keyframes flame {
+    from { color: orange; text-shadow: 0 0 10px red; }
+    to { color: red; text-shadow: 0 0 20px orange; }
+}
+
+.hidden {
+    display: none;
+}
